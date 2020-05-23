@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .header {
+            font: 30px Helvetica;
+            width: 817px;
+            text-align: center;
+            user-select: none;
+        }
+        #input {
+            border:5px solid #9638DB;
+            background-color: #FFFF66;
+            font-size: 30px;
+        }
+        ::selection{
+            background-color: #9638DB;
+            color: white;
+        }
+        #button {
+           display: inline-block;
+            background-color: #BE66FF;
+            font-size: 30px;
+            Border: 5px solid #9638DB;
+            margin-left:159px;
+            margin-bottom: 12px;
+            margin-top: 8px;
+            cursor: pointer;
+            width: 500px;
+        }
+        #output {
+            border:5px solid #aaaaaa;
+            background-color: whitesmoke;
+            font-size: 30px; 
+            user-select: none;
+        }
+        #background {
+            width: 849px;
+            height: 911px;
+            padding: 16px;
+            border: 5px solid #cecece;
+            position: relative;
+            margin: auto;
+            margin-top: 8px;
+            background-color: #eeeeee;
+        }
+        body {
+            margin: 0;
+        }
+        #teamsize {
+            margin-left: 16px;
+            width: 250px;
+            height: 390px;
+            border:5px solid #aaaaaa;
+            background-color: whitesmoke;
+            position: inherit;
+        }
+        #lower {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        #team {
+            margin: 8px;
+            font: 30px Helvetica;
+            text-align: center;
+            user-select: none;
+        }
+        #buttonCenter {
+            position: relative;
+            margin: auto;
+            width: 96px;
+            background-color: #cecece;
+        }
+        .adjust {
+            background-color: #BE66FF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 8px;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+        .value {
+            background-color: #aaaaaa;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 8px;
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+    <script src="teammaker.js"></script>
+</head>
+<body>
+    <div id = background>
+        <h1 class = header>List Players Here:</h1>
+        <textarea rows=10 cols = 50 id="input"></textarea>
+        <div></div>
+        <button id="button" width = 200 height = 100>Generate</button>
+        <div></div>
+        <div id = lower>
+            <textarea rows=10 cols = 34 id="output"></textarea>
+            <div id = teamsize>
+                <div id=team>Team Size:</div>
+                <div id = buttonCenter>
+                    <button class = adjust id = "plus">+</button>
+                    <button class = value id = "display">2</button>
+                    <button class = adjust id = "minus">-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
